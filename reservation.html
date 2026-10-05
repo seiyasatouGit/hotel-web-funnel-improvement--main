@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ご予約｜donguri-Hotel<br>
+         city&mountain
+
+  </title>
+
+  <meta
+    name="description"
+    content="Mountain City Hotelの宿泊予約ページです。宿泊日、人数、客室タイプを選択して予約内容をご確認いただけます。"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reservation.css">
+</head>
+
+<body>
+
+
+    <!-- headr -->
+  <header class="header">
+    <div class="header__inner">
+
+      <a href="index.html" class="header__logo">
+        donguri-Hotel<br>
+        city&mountain
+      </a>
+
+      <nav class="header__nav" aria-label="メインナビゲーション">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="index.html">ホーム</a>
+          </li>
+
+          <li class="header__item">
+            <a href="rooms.html">客室</a>
+          </li>
+
+          <li class="header__item">
+            <a href="index.html#access">アクセス</a>
+          </li>
+
+          <li class="header__item">
+            <a href="reservation.html" class="header__reserve">
+              ご予約
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       Main
+  ========================== -->
+  <main>
+
+    <!-- Page Title -->
+    <section class="reservation-hero">
+      <div class="reservation-hero__inner">
+
+        <p class="reservation-hero__label">
+          RESERVATION
+        </p>
+
+        <h1 class="reservation-hero__title">
+          ご宿泊予約
+        </h1>
+
+        <p class="reservation-hero__text">
+          ご希望の宿泊日・人数・客室タイプを選択してください。
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         Reservation Form
+    ========================== -->
+    <section class="reservation">
+      <div class="reservation__inner">
+
+        <form class="reservation-form" action="#" method="post">
+
+          <!-- Step -->
+          <div class="reservation-step">
+
+            <div class="reservation-step__number">
+              01
+            </div>
+
+            <div class="reservation-step__content">
+
+              <p class="reservation-step__label">
+                STAY DATE
+              </p>
+
+              <h2 class="reservation-step__title">
+                宿泊日を選択
+              </h2>
+
+              <div class="reservation-form__row">
+
+                <div class="reservation-form__field">
+
+                  <label
+                    for="checkin"
+                    class="reservation-form__label"
+                  >
+                    チェックイン
+                  </label>
+
+                  <input
+                    type="date"
+                    id="checkin"
+                    name="checkin"
+                    class="reservation-form__input"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="reservation-form__field">
+
+                  <label
+                    for="checkout"
+                    class="reservation-form__label"
+                  >
+                    チェックアウト
+                  </label>
+
+                  <input
+                    type="date"
+                    id="checkout"
+                    name="checkout"
+                    class="reservation-form__input"
+                    required
+                  >
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Guest -->
+          <div class="reservation-step">
+
+            <div class="reservation-step__number">
+              02
+            </div>
+
+            <div class="reservation-step__content">
+
+              <p class="reservation-step__label">
+                GUESTS
+              </p>
+
+              <h2 class="reservation-step__title">
+                ご利用人数
+              </h2>
+
+              <div class="reservation-form__row">
+
+                <div class="reservation-form__field">
+
+                  <label
+                    for="adults"
+                    class="reservation-form__label"
+                  >
+                    大人
+                  </label>
+
+                  <select
+                    id="adults"
+                    name="adults"
+                    class="reservation-form__select"
+                    required
+                  >
+                    <option value="1">1名</option>
+                    <option value="2" selected>2名</option>
+                    <option value="3">3名</option>
+                    <option value="4">4名</option>
+                    <option value="5">5名</option>
+                    <option value="6">6名</option>
+                  </select>
+
+                </div>
+
+
+                <div class="reservation-form__field">
+
+                  <label
+                    for="children"
+                    class="reservation-form__label"
+                  >
+                    子ども
+                  </label>
+
+                  <select
+                    id="children"
+                    name="children"
+                    class="reservation-form__select"
+                  >
+                    <option value="0" selected>0名</option>
+                    <option value="1">1名</option>
+                    <option value="2">2名</option>
+                    <option value="3">3名</option>
+                  </select>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Room -->
+          <div class="reservation-step">
+
+            <div class="reservation-step__number">
+              03
+            </div>
+
+            <div class="reservation-step__content">
+
+              <p class="reservation-step__label">
+                ROOM
+              </p>
+
+              <h2 class="reservation-step__title">
+                客室を選択
+              </h2>
+
+
+              <div class="room-select">
+
+                <!-- Room 01 -->
+                <label class="room-select__item">
+
+                  <input
+                    type="radio"
+                    name="room"
+                    value="standard"
+                    checked
+                  >
+
+                  <span class="room-select__body">
+
+                    <span class="room-select__name">
+                      スタンダードツイン
+                    </span>
+
+                    <span class="room-select__description">
+                      山と街並みを望む、落ち着いた客室。
+                    </span>
+
+                    <span class="room-select__price">
+                      ¥18,000〜
+                      <small> / 1泊</small>
+                    </span>
+
+                  </span>
+
+                </label>
+
+
+                <!-- Room 02 -->
+                <label class="room-select__item">
+
+                  <input
+                    type="radio"
+                    name="room"
+                    value="deluxe"
+                  >
+
+                  <span class="room-select__body">
+
+                    <span class="room-select__name">
+                      デラックスツイン
+                    </span>
+
+                    <span class="room-select__description">
+                      ゆったりとした空間で過ごせる上質な客室。
+                    </span>
+
+                    <span class="room-select__price">
+                      ¥25,000〜
+                      <small> / 1泊</small>
+                    </span>
+
+                  </span>
+
+                </label>
+
+
+                <!-- Room 03 -->
+                <label class="room-select__item">
+
+                  <input
+                    type="radio"
+                    name="room"
+                    value="suite"
+                  >
+
+                  <span class="room-select__body">
+
+                    <span class="room-select__name">
+                      スイートルーム
+                    </span>
+
+                    <span class="room-select__description">
+                      特別な滞在におすすめの広々とした客室。
+                    </span>
+
+                    <span class="room-select__price">
+                      ¥38,000〜
+                      <small> / 1泊</small>
+                    </span>
+
+                  </span>
+
+                </label>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Guest Information -->
+          <div class="reservation-step">
+
+            <div class="reservation-step__number">
+              04
+            </div>
+
+            <div class="reservation-step__content">
+
+              <p class="reservation-step__label">
+                INFORMATION
+              </p>
+
+              <h2 class="reservation-step__title">
+                お客様情報
+              </h2>
+
+
+              <div class="reservation-form__group">
+
+                <div class="reservation-form__field">
+
+                  <label
+                    for="name"
+                    class="reservation-form__label"
+                  >
+                    お名前
+                  </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="reservation-form__input"
+                    placeholder="山田 太郎"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="reservation-form__field">
+
+                  <label
+                    for="email"
+                    class="reservation-form__label"
+                  >
+                    メールアドレス
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="reservation-form__input"
+                    placeholder="example@example.com"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="reservation-form__field">
+
+                  <label
+                    for="phone"
+                    class="reservation-form__label"
+                  >
+                    電話番号
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="reservation-form__input"
+                    placeholder="090-0000-0000"
+                    required
+                  >
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Notes -->
+          <div class="reservation-step">
+
+            <div class="reservation-step__number">
+              05
+            </div>
+
+            <div class="reservation-step__content">
+
+              <p class="reservation-step__label">
+                REQUEST
+              </p>
+
+              <h2 class="reservation-step__title">
+                ご要望
+              </h2>
+
+              <div class="reservation-form__field">
+
+                <label
+                  for="request"
+                  class="reservation-form__label"
+                >
+                  その他ご要望
+                </label>
+
+                <textarea
+                  id="request"
+                  name="request"
+                  class="reservation-form__textarea"
+                  rows="5"
+                  placeholder="ご要望がございましたらご入力ください。"
+                ></textarea>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Summary -->
+          <div class="reservation-summary">
+
+            <p class="reservation-summary__label">
+              RESERVATION SUMMARY
+            </p>
+
+            <h2 class="reservation-summary__title">
+              予約内容をご確認ください
+            </h2>
+
+            <p class="reservation-summary__text">
+              入力内容をご確認のうえ、
+              「予約内容を確認する」ボタンを押してください。
+            </p>
+
+          </div>
+
+
+          <!-- Submit -->
+          <div class="reservation-form__submit">
+
+            <button
+              type="submit"
+              class="reservation-form__button"
+            >
+              予約内容を確認する
+            </button>
+
+            <p class="reservation-form__note">
+              ※こちらはポートフォリオ用のデモページです。
+              実際の予約は完了しません。
+            </p>
+
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       Footer
+  ========================== -->
+  <footer class="footer">
+
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <p class="footer__logo">
+          donguri-Hotel<br>
+        city&mountain
+        </p>
+
+        <p class="footer__text">
+          山と街をつなぐ、心地よい滞在。
+        </p>
+      </div>
+
+
+      <nav class="footer__nav">
+        <ul class="footer__list">
+
+          <li>
+            <a href="index.html">
+              ホーム
+            </a>
+          </li>
+
+          <li>
+            <a href="rooms.html">
+              客室
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#access">
+              アクセス
+            </a>
+          </li>
+
+          <li>
+            <a href="reservation.html">
+              ご予約
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+
+
+    <div class="footer__copyright">
+      <p>
+        &copy; 2026 donguri-Hotel city&mountain
+      </p>
+    </div>
+
+  </footer>
+  <script src="js/reservation.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donguri room</title>
+    <link rel="stylesheet" href="css/rooms.css">
+</head>
+<body>
+    <section class="rooms" id="rooms">
+  <div class="rooms__inner">
+
+    <header class="rooms__header">
+      <p class="rooms__label">ROOMS</p>
+      <h2 class="rooms__title">客室情報</h2>
+      <p class="rooms__description">
+        お客様の滞在スタイルに合わせてお選びいただける客室をご用意しています。
+      </p>
+    </header>
+
+    <div class="rooms__list">
+
+      <!-- 客室1 -->
+      <article class="room-card">
+
+        <div class="room-card__image">
+          <img
+            src="img/standard-room.jpg"
+            alt="スタンダードツインの客室"
+          >
+        </div>
+
+        <div class="room-card__body">
+
+          <h3 class="room-card__title">
+            スタンダードツイン
+          </h3>
+
+          <p class="room-card__description">
+            落ち着いた空間でゆったり過ごせるスタンダードタイプ。
+          </p>
+
+          <ul class="room-card__specs">
+            <li class="room-card__spec">
+              <span class="room-card__spec-label">定員</span>
+              <span class="room-card__spec-value">2名</span>
+            </li>
+
+            <li class="room-card__spec">
+              <span class="room-card__spec-label">広さ</span>
+              <span class="room-card__spec-value">25㎡</span>
+            </li>
+
+            <li class="room-card__spec">
+              <span class="room-card__spec-label">ベッド</span>
+              <span class="room-card__spec-value">ツイン</span>
+            </li>
+          </ul>
+
+          <button
+            class="room-card__button"
+            type="button"
+            data-room="standard"
+          >
+            詳細を見る
+          </button>
+
+        </div>
+      </article>
+
+
+      <!-- 客室2 -->
+      <article class="room-card">
+
+        <div class="room-card__image">
+          <img
+            src="img/deluxe-room.jpg"
+            alt="デラックスツインの客室"
+          >
+        </div>
+
+        <div class="room-card__body">
+
+          <h3 class="room-card__title">
+            デラックスツイン
+          </h3>
+
+          <p class="room-card__description">
+            広めの空間で、ゆとりのあるホテルステイを楽しめる客室。
+          </p>
+
+          <ul class="room-card__specs">
+            <li class="room-card__spec">
+              <span class="room-card__spec-label">定員</span>
+              <span class="room-card__spec-value">3名</span>
+            </li>
+
+            <li class="room-card__spec">
+              <span class="room-card__spec-label">広さ</span>
+              <span class="room-card__spec-value">35㎡</span>
+            </li>
+
+            <li class="room-card__spec">
+              <span class="room-card__spec-label">ベッド</span>
+              <span class="room-card__spec-value">ツイン</span>
+            </li>
+          </ul>
+
+          <button
+            class="room-card__button"
+            type="button"
+            data-room="deluxe"
+          >
+            詳細を見る
+          </button>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<script src="js/rooms.js"></script>
+</body>
+</html>
